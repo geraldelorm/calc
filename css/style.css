@@ -29,21 +29,16 @@ body {
   border-radius: 20px 20px 0 0;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .calculator {
-    width: 300px;
-  }
-  .calculator .btn {
-    height: 80px;
+    width: 100vw;
+    border-radius: 0;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-height: 610px) {
   .calculator {
-    width: 250px;
-  }
-  .calculator .btn {
-    height: 60px;
+    height: 100vh;
   }
 }
 
