@@ -92,11 +92,11 @@ body {
 }
 
 .btn.equal:hover {
-  background-color: #00ff9d;
+  background-color: #5effc1;
 }
 
 .btn.equal:active {
-  background-color: #00ff9d;
+  background-color: #00ff55;
 }
 
 .btn-row {
