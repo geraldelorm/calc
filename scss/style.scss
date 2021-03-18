@@ -1,0 +1,79 @@
+@import 'variables';
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-image: $gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.calculator {
+    width: 400px;
+    background-color: black;
+}
+
+.calc-screen {
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+    padding: 20px 5px;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: $btn-bg-color;
+    color: black;
+    border: 0;
+    width: 24.5%;
+    height: 100px;
+    margin: 1px 1px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.double {
+        width: 49.7%;
+    }
+
+    &:hover {
+        background-color: $btn-bg-color-hover;
+    }
+    &:active {
+        background-color: $btn-bg-color-active;
+    }
+    &:last-child {
+        background-color: $btn-bg-color-lastchild;
+        &:hover {
+            background-color: $btn-bg-color-lastchild-hover;
+        }
+        &:active {
+            background-color: $btn-bg-color-lastchild-active;
+        }
+    }
+}
+
+// this style on the row puts every thing on one line
+.btn-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.btn-row:last-child {
+    padding-bottom: 0;
+}
+
+.icon a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 49.5%;
+}
