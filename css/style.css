@@ -29,6 +29,24 @@ body {
   border-radius: 20px 20px 0 0;
 }
 
+@media (max-width: 450px) {
+  .calculator {
+    width: 300px;
+  }
+  .calculator .btn {
+    height: 80px;
+  }
+}
+
+@media (max-width: 300px) {
+  .calculator {
+    width: 250px;
+  }
+  .calculator .btn {
+    height: 60px;
+  }
+}
+
 .calc-screen {
   color: white;
   font-size: 3rem;
@@ -95,5 +113,11 @@ body {
   position: absolute;
   bottom: 10px;
   right: 49.5%;
+}
+
+@media (max-height: 670px) {
+  .icon a {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
