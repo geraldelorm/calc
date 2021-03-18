@@ -38,7 +38,7 @@ body {
 
 @media (max-height: 610px) {
   .calculator {
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -85,6 +85,18 @@ body {
 
 .btn:last-child:active {
   background-color: #00a2ff;
+}
+
+.btn.equal {
+  background-color: #00ff9d;
+}
+
+.btn.equal:hover {
+  background-color: #00ff9d;
+}
+
+.btn.equal:active {
+  background-color: #00ff9d;
 }
 
 .btn-row {

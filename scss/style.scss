@@ -25,7 +25,7 @@ body {
         border-radius: 0;
     }
     @media (max-height: 610px) {
-        height: 100vh;
+        height: 100%;
     }
 }
 
@@ -69,6 +69,15 @@ body {
         }
         &:active {
             background-color: $btn-bg-color-lastchild-active;
+        }
+    }
+    &.equal {
+        background-color: $btn-equal;
+        &:hover {
+            background-color: $btn-equal-hover;
+        }
+        &:active {
+            background-color: $btn-equal-active;
         }
     }
 }
