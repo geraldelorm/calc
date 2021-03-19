@@ -14,7 +14,6 @@ body {
     height: 100vh;
     position: relative;
 }
-
 .calculator {
     width: 400px;
     background-color: black;
@@ -28,7 +27,6 @@ body {
         height: 100%;
     }
 }
-
 .calc-screen {
     color: white;
     font-size: 3rem;
@@ -42,7 +40,6 @@ body {
     word-wrap: break-word;
     word-break: break-all;
 }
-
 .btn {
     background-color: $btn-bg-color;
     color: black;
@@ -54,14 +51,9 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 0;
-    // @media (max-width: 400px) {
-    //     font-size: 20px;
-    // }
-
     &.double {
         width: 49.7%;
     }
-
     &:hover {
         background-color: $btn-bg-color-hover;
     }
@@ -87,7 +79,6 @@ body {
         }
     }
 }
-
 // this style on the row puts every thing on one line
 .btn-row {
     display: flex;
@@ -98,13 +89,11 @@ body {
 .btn-row:last-child {
     padding-bottom: 0;
 }
-
 .icon a {
     text-decoration: none;
     position: absolute;
     bottom: 10px;
     right: 49.5%;
-
     @media (max-height: 670px) {
         display: none;
     }
