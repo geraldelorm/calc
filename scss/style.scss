@@ -35,6 +35,12 @@ body {
     text-align: right;
     padding: 20px 5px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .btn {
