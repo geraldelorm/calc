@@ -3,6 +3,7 @@ let buffer = '0';
 let prevOperator = null;
 
 const screen = document.querySelector('.calc-screen');
+
 const button = document.querySelector('.calc-btns');
 
 button.addEventListener('click', (event) => {
@@ -28,9 +29,11 @@ function handleNumber(value) {
         buffer = buffer + value;
     }
 }
+
 function handleDot(value) {
     buffer = buffer + value;
 }
+
 function handleSymbol(value) {
     switch (value) {
         case 'C':
