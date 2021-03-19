@@ -89,7 +89,4 @@ function showResult(intBuffer) {
 
 function reWriteOnScreen() {
     screen.innerText = buffer;
-    if (buffer.length > 10) {
-        Math.round(buffer, 10);
-    }
 }
