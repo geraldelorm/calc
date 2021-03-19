@@ -47,6 +47,7 @@ function handleSymbol(value) {
             } else {
                 buffer = buffer.substring(0, buffer.length - 1);
             }
+            break;
         case '=':
             if (prevOperator === null) {
                 return;
@@ -59,6 +60,11 @@ function handleSymbol(value) {
         default:
             handleMath(value);
             break;
+        // case '-':
+        // case '×':
+        // case '÷':
+        //     handleMath(value);
+        //     break;
     }
 }
 
@@ -88,6 +94,20 @@ function showResult(intBuffer) {
     } else {
         runningTotal /= intBuffer;
     }
+    // switch (value) {
+    //     case prevOperator === '+':
+    //         runningTotal += intBuffer;
+    //         break;
+    //     case prevOperator === '-':
+    //         runningTotal -= intBuffer;
+    //         break;
+    //     case prevOperator === '×':
+    //         runningTotal *= intBuffer;
+    //         break;
+    //     default:
+    //         runningTotal /= intBuffer;
+    //         break;
+    // }
 }
 
 function reWriteOnScreen() {
